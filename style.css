@@ -1,0 +1,251 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	position: relative;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+
+h1 {
+	font-size: 2.75rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+header {
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	background-color: white;
+}
+
+nav {
+	display: flex;
+	padding: 1rem 4rem 0.5rem 4rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#logo img {
+	width: 4rem;
+	height: auto;
+}
+
+#menu ul {
+	list-style-type: none;
+	display: flex;
+}
+
+#menu ul li {
+	padding: 0 1.25rem;
+}
+
+#menu ul li a {
+	text-decoration: none;
+	color: #555;
+	font-weight: 500;
+}
+
+#menu ul li a:hover {
+	color: #52c4cd;
+}
+
+#alert-konsultasi {
+	text-align: center;
+	padding: 0.4rem;
+	background-color: #128c7e;
+	color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#action-langganan {
+	padding-bottom: 0.25rem;
+}
+
+button.action {
+	padding: 0.875rem 1.375rem;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	font-size: 0.875rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 2rem;
+	background-image: linear-gradient(to bottom, #ffc800, #f89825);
+}
+
+#section-1 {
+	margin: 0;
+	background-color: #22939c;
+	display: flex;
+	padding: 1rem 3rem;
+}
+
+@media screen and (min-width: 775px) {
+	#humberger {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	nav {
+		padding: 1rem 2.5rem 0.5rem 2.5rem;
+	}
+
+	#section-1 {
+		padding: 0rem 1.5rem;
+	}
+}
+
+@media screen and (max-width: 775px) {
+	:root {
+		font-size: 14px;
+	}
+
+	#section-1 {
+		flex-wrap: wrap;
+	}
+
+	#keterangan-paket {
+		width: 100% !important;
+	}
+
+	#pilihan-paket {
+		width: 100% !important;
+	}
+
+	#action-langganan {
+		text-align: center;
+		left: 0;
+		bottom: 1rem;
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+	}
+
+	#action-langganan button {
+		width: 90%;
+
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+#keterangan-paket {
+	padding: 1rem;
+	width: 50%;
+	color: white;
+}
+
+#keterangan-paket img {
+	width: 90%;
+	height: auto;
+}
+
+#pilihan-paket {
+	width: 50%;
+}
+
+#pilihan-paket .wrapper {
+	padding: 1rem 2rem;
+	margin: 3.25rem 1rem 0 1.25rem;
+	color: #555;
+	background-color: white;
+	border-radius: 1rem;
+}
+
+#pilihan-paket span {
+	font-size: small;
+}
+
+#select-wrapper select {
+	padding: 1rem 1.5rem;
+	width: 100%;
+	margin-top: 0.5rem;
+	background-color: #e6ebf1;
+	border: none;
+	border-radius: 4rem;
+	text-transform: uppercase;
+	outline: none;
+	appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 95%;
+	background-position-y: 50%;
+}
+
+#langganan-sekarang button {
+	width: 100%;
+	padding: 1.25rem;
+	margin: 1.25rem 0;
+}
+
+#banner-langganan {
+	/* display: flex; */
+	/* justify-content: space-between; */
+	margin: 2rem 0 0 0;
+	border: 1px solid #ddd;
+	border-radius: 1rem;
+	position: relative;
+}
+
+#banner-langganan .detail {
+	padding: 1.5rem;
+}
+
+#banner-langganan .title {
+	font-size: larger;
+	font-weight: bold;
+	padding-bottom: 1.5rem;
+}
+
+#banner-langganan .banner img {
+	height: 4rem;
+	width: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.text-coret-harga,
+.secondary-title {
+	font-size: medium;
+	font-weight: bold;
+}
+
+.text-coret-harga {
+	color: #777;
+	padding-bottom: 0.3rem;
+	text-decoration: line-through;
+}
+
+.text-normal-harga {
+	font-weight: bolder;
+	font-size: x-large;
+	color: #ed2643;
+	padding-bottom: 1.5rem;
+}
+
+#menu a {
+	position: relative;
+}
+#right-arrow {
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: 10%;
+}
